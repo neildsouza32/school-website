@@ -8,7 +8,7 @@ import Faculty from './components/faculty/faculty';
 import Students from './components/students/students';
 import Gallery from './components/gallery/gallery';
 import ContactUs from './components/contact/contactus';
-import './App.css';
+import './app.css';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
