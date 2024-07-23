@@ -1,0 +1,105 @@
+.home-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.school-name {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.introduction {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.carousel-container {
+  margin: 20px 0;
+}
+
+.carousel-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.carousel-item {
+  min-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .school-name {
+    font-size: 2em;
+  }
+
+  .introduction {
+    font-size: 1em;
+  }
+
+  .carousel-title {
+    font-size: 1.5em;
+  }
+
+  .carousel-item {
+    min-width: 120px;
+    font-size: 0.9em;
+  }
+}
